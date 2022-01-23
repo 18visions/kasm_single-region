@@ -1,7 +1,7 @@
 module "standard" {
   source                = "./module"
-  #aws_access_key        = ""
-  #aws_secret_key        = ""
+  aws_access_key        = "${var.aws_access_key}"
+  aws_secret_key        = "${var.aws_secret_key}"
   aws_key_pair          = "${var.aws_key_pair}"
   aws_region            = "us-west-1"
   aws_domain_name       = "kasm.iworksometimes.com"
